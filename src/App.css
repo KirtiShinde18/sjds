@@ -1,0 +1,106 @@
+body {
+    font-family: 'Syne', sans-serif; 
+}
+h1 {
+    font-family: 'Marcellus', Roboto, sans-serif;
+}
+
+/* wrapper */
+.img-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  border-radius: 6px; 
+cursor: pointer; 
+}
+
+/* image */
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+  cursor: pointer; 
+}
+
+/* zoom on hover */
+.img-wrapper:hover img {
+  transform: scale(1.1);
+}
+
+/* overlay always visible */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(0,0,0,0.3);
+  color: #fff;
+
+  transition: 0.4s ease;
+}
+
+/* hover slightly dark */
+.img-wrapper:hover .overlay {
+  background: rgba(0,0,0,0.5);
+}
+
+/* text */
+.overlay h3, 
+.overlay h5 {
+  font-weight: 600;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+}
+
+/* 🔥 IMPORTANT FIX (same size for 4 images) */
+.small-img {
+  height: 150px;
+}
+
+/* jali iamge  */
+.jali-img {
+  height: 250px;
+  width: 90%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.phone-link,
+.mail-link {
+  color: #6c757d;
+  transition: 0.3s;
+}
+
+.phone-link:hover,
+.mail-link:hover {
+  color: black;
+}
+
+
+.brand-link {
+  color: black;
+  transition: 0.3s ease;
+}
+
+.brand-link:hover {
+  background: linear-gradient(90deg, #ff4d4d, #6a5af9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.social-icon {
+  color: #6c757d;
+  transition: 0.3s ease;
+}
+
+.social-icon:hover {
+  color: black;
+  transform: translateY(-2px);
+}
+
