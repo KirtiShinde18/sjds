@@ -18,7 +18,7 @@ const Footer = () => {
         <div className="col-sm-4">
           <h3>Contact</h3>
 
-          <div className="d-flex flex-column gap-2">
+          <div className="d-flex flex-column gap-2 my-3">
 
             <a href="tel:+919414226377" className="phone-link text-decoration-none">
               <i className="bi bi-telephone me-1"></i> +91 9414226377
